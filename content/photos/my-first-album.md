@@ -1,5 +1,5 @@
 ---
-title: "第一组照片"
+title: "第二组照片"
 date: 2026-04-30
 draft: false
 tags: ["摄影", "风景"]

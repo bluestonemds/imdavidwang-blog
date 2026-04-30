@@ -1,5 +1,5 @@
 baseURL = "https://www.imdavidwang.com/"
-locale = "zh-cn"
+languageCode = "zh-CN"
 title = "My Blog"
 theme = "PaperMod"
 
