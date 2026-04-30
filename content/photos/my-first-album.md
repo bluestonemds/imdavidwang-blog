@@ -5,7 +5,7 @@ draft: false
 tags: ["摄影", "风景"]
 description: "记录生活中的美好瞬间"
 cover:
-  image: "https://img.imdavidwang.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260430233443_109_36.jpg"
+  image: "https://img.imdavidwang.com/20260428.jpg"
   alt: "封面照片"
   relative: false
 ---
