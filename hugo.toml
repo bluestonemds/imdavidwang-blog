@@ -1,0 +1,46 @@
+baseURL = "https://www.imdavidwang.com/"
+locale = "zh-cn"
+title = "My Blog"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  description = "My personal blog"
+  author = "bluestone"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+
+[params.homeInfoParams]
+  Title = "Hi there"
+  Content = "Welcome to my blog"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/bluestonemds"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "photos"
+    name = "我的图片"
+    url = "/photos/"
+    weight = 25
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
