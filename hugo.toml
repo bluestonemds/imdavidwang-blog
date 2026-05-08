@@ -35,6 +35,11 @@ theme = "PaperMod"
     url = "/tags/"
     weight = 20
   [[menu.main]]
+    identifier = "books"
+    name = "读书"
+    url = "/books/"
+    weight = 22
+  [[menu.main]]
     identifier = "photos"
     name = "我的图片"
     url = "/photos/"
