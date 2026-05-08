@@ -2,7 +2,8 @@
 title: "Street of Eternal Happiness"
 date: ""
 author: "Rob Schmitz"
-cover: "https://img.imdavidwang.com/books-cover/26150583.jpg"
+cover:
+  image: "https://img.imdavidwang.com/books-cover/26150583.jpg"
 tags: ["读书笔记"]
 categories: ["读书"]
 ---
