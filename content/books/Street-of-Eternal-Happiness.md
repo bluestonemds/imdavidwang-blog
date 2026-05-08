@@ -3,10 +3,12 @@ title: "Street of Eternal Happiness"
 date: ""
 author: "Rob Schmitz"
 cover:
-  image: "https://img.imdavidwang.com/books-cover/26150583.jpg"
+  image: "https://img.imdavidwang.com/cdn-cgi/image/width=400,quality=80/books-cover/26150583.jpg"
 tags: ["读书笔记"]
 categories: ["读书"]
 ---
+
+![](https://img.imdavidwang.com/cdn-cgi/image/width=400,quality=80/books-cover/26150583.jpg)
 
 本周继续读"Street of Eternal Happniess"，第4个故事讲的是赵姐，一个花店老板，山东枣庄人。小时候患了白血病，花了家里不少钱，不过幸运的是治好了。由于患过病，影响了她找对象，东找西找找了一个条件不好，脾气不好，在煤矿工作的男人并和他生下了两个儿子。婚后生活非常不和谐。由于忍受不了丈夫的坏脾气，她带着大儿子来到了上海打工，从初级的打工做起，最后开了一间花店，也赚了一些钱。
 
