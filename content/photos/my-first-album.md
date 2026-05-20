@@ -5,11 +5,11 @@ draft: false
 tags: ["摄影", "景物"]
 description: "记录生活中的美好瞬间"
 ---
-[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang3.jpg)](https://img.imdavidwang.com/photos/shenyang3.jpeg)
+[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang3.jpg)](https://img.imdavidwang.com/photos/shenyang3.jpg)
 沈阳
-[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang2.jpg)](https://img.imdavidwang.com/photos/shenyang2.jpeg)
+[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang2.jpg)](https://img.imdavidwang.com/photos/shenyang2.jpg)
 沈阳
-[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang1.jpg)](https://img.imdavidwang.com/photos/shenyang1.jpeg)
+[![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/shenyang1.jpg)](https://img.imdavidwang.com/photos/shenyang1.jpg)
 沈阳
 [![照片](https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/IMG_6234.jpeg)](https://img.imdavidwang.com/photos/IMG_6234.jpeg)
 一人晚餐
