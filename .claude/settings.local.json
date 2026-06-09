@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/davidwang/MyProjects/my-blog submodule status)"
+    ]
+  }
+}

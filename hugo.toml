@@ -2,6 +2,8 @@ baseURL = "https://www.imdavidwang.com/"
 languageCode = "zh-CN"
 title = "My Blog"
 theme = "PaperMod"
+[pagination]
+  pagerSize = 12
 
 [params]
   env = "production"
@@ -14,6 +16,7 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowFullTextinRSS = true
+  mainSections = ["notes"]
 
 [params.homeInfoParams]
   Title = "Hi there"
@@ -25,25 +28,15 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    identifier = "notes"
+    name = "笔记"
+    url = "/notes/"
     weight = 10
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-  [[menu.main]]
-    identifier = "books"
-    name = "读书"
-    url = "/books/"
-    weight = 22
-  [[menu.main]]
     identifier = "photos"
-    name = "我的图片"
+    name = "照片"
     url = "/photos/"
-    weight = 25
+    weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"

@@ -1,0 +1,25 @@
+{{- define "main" }}
+
+<article class="post-single photo-single">
+  <header class="post-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- if .Params.album }}
+    <div class="post-description">{{ .Params.album }}</div>
+    {{- end }}
+  </header>
+
+  <div class="photo-single-content">
+    <a href="{{ .Params.image }}" target="_blank" rel="noopener">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+    </a>
+  </div>
+
+  {{- if not (.Param "hideMeta") }}
+  <footer class="post-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+</article>
+
+{{- end }}
