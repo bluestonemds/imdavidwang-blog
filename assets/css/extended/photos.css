@@ -5,12 +5,6 @@
     margin-top: 1.5rem;
 }
 
-@media (min-width: 768px) {
-    .photo-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .photo-gallery + .page-footer {
     margin-top: 1rem;
 }
@@ -36,8 +30,7 @@
 
 .photo-item img {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
