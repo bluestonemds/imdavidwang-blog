@@ -1,4 +1,4 @@
-﻿---
+---
 aliases:
   - /books/Street-of-Eternal-Happiness/
 title: "Street of Eternal Happiness"
