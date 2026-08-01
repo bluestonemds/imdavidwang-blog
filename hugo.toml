@@ -1,13 +1,14 @@
 baseURL = "https://www.imdavidwang.com/"
-languageCode = "zh-CN"
-title = "My Blog"
+locale = "zh-CN"
+title = "我的博客"
 theme = "PaperMod"
+defaultContentLanguage = "zh"
 [pagination]
   pagerSize = 12
 
 [params]
   env = "production"
-  description = "My personal blog"
+  description = "我的个人博客"
   author = "bluestone"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -17,14 +18,6 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
   ShowFullTextinRSS = true
   mainSections = ["notes"]
-
-[params.homeInfoParams]
-  Title = "Hi there"
-  Content = "Welcome to my blog"
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/bluestonemds"
 
 [menu]
   [[menu.main]]
@@ -39,6 +32,6 @@ theme = "PaperMod"
     weight = 20
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "关于"
     url = "/about/"
     weight = 30
