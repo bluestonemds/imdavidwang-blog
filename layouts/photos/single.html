@@ -9,15 +9,23 @@
     {{- end }}
   </header>
 
+  {{- $view := .Params.image }}
+  {{- with .Params.thumb }}
+    {{- $view = replace . "width=800" "width=1600" }}
+  {{- end }}
+
   <div class="photo-single-content">
     <a href="{{ .Params.image }}" target="_blank" rel="noopener">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+      <img src="{{ $view }}" alt="{{ .Title }}" loading="eager" decoding="async">
     </a>
   </div>
 
   {{- if not (.Param "hideMeta") }}
   <footer class="post-footer">
-    {{- partial "post_meta.html" . -}}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{- with .Params.album }}
+    <span aria-hidden="true">&nbsp;·&nbsp;</span><span>{{ . }}</span>
+    {{- end }}
   </footer>
   {{- end }}
 </article>

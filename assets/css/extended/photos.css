@@ -1,57 +1,170 @@
+/* =========================================================
+   Photos: editorial minimal gallery
+   等宽网格 · 单列大图(移动端) · 克制的悬停缩放
+   ========================================================= */
+
+/* ---------- 列表页头 ---------- */
+.photo-list-header {
+    max-width: var(--main-width);
+    margin: 24px auto var(--content-gap);
+    text-align: center;
+}
+
+.photo-list-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+}
+
+.photo-list-header .post-description {
+    color: var(--secondary);
+    font-size: .92rem;
+    letter-spacing: .12em;
+    margin-top: .5rem;
+}
+
+/* ---------- 画廊网格：通栏(超出 .main)，等宽列 ---------- */
 .photo-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin-top: 1.5rem;
+    gap: clamp(1.1rem, 2.4vw, 2.2rem);
+    align-items: start;
+    margin-block: 1.5rem 0.5rem;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: var(--gap);
+}
+
+@media (min-width: 640px) {
+    .photo-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .photo-gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1440px) {
+    .photo-gallery { grid-template-columns: repeat(4, 1fr); }
 }
 
 .photo-gallery + .page-footer {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 }
 
+/* ---------- 单张照片 ---------- */
 .photo-item {
     margin: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    background: var(--entry);
-    border: 1px solid var(--border);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.photo-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    animation: photo-fade-in .7s ease both;
 }
 
 .photo-item a {
     display: block;
+    overflow: hidden;
     line-height: 0;
+    border-radius: 3px;
+    background: var(--entry);
+}
+
+.photo-item a:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 3px;
 }
 
 .photo-item img {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform .6s cubic-bezier(.22, .61, .36, 1);
+}
+
+.photo-item a:hover img,
+.photo-item a:focus-visible img {
+    transform: scale(1.045);
 }
 
 .photo-item figcaption {
-    padding: 0.6rem 0.75rem;
-    font-size: 0.9rem;
-    text-align: center;
+    padding: .7rem 0 0;
+    text-align: left;
     color: var(--secondary);
+    font-size: .8rem;
+    letter-spacing: .05em;
+    line-height: 1.5;
+}
+
+/* 入场逐项错落 */
+.photo-item:nth-child(2) { animation-delay: .05s; }
+.photo-item:nth-child(3) { animation-delay: .1s; }
+.photo-item:nth-child(4) { animation-delay: .15s; }
+.photo-item:nth-child(5) { animation-delay: .2s; }
+.photo-item:nth-child(6) { animation-delay: .25s; }
+
+@keyframes photo-fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* ---------- 分页：克制的内联样式 ---------- */
+.photo-gallery ~ .page-footer .pagination a {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.photo-gallery ~ .page-footer .pagination a:hover {
+    border-color: var(--tertiary);
+    background: var(--entry);
+}
+
+/* ---------- 单张照片页 ---------- */
+.photo-single .post-header {
+    max-width: var(--main-width);
+    margin: 24px auto 1.5rem;
+    text-align: center;
+}
+
+.photo-single .post-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.photo-single .post-description {
+    color: var(--secondary);
+    font-size: .85rem;
+    letter-spacing: .16em;
+    margin-top: .4rem;
 }
 
 .photo-single-content {
-    margin: 1.5rem 0;
-    text-align: center;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: var(--gap);
+    line-height: 0;
+}
+
+.photo-single-content a {
+    display: block;
 }
 
 .photo-single-content img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    display: block;
 }
 
 .photo-single .post-footer {
-    margin-top: 1rem;
+    max-width: var(--main-width);
+    margin: 1.25rem auto 0;
+    text-align: center;
+    color: var(--secondary);
+    font-size: .85rem;
+    letter-spacing: .12em;
+}
+
+/* ---------- 无障碍：减少动效 ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .photo-item { animation: none; }
+    .photo-item img { transition: none; }
+    .photo-item a:hover img,
+    .photo-item a:focus-visible img { transform: none; }
 }

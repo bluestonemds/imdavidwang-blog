@@ -1,6 +1,6 @@
 {{- define "main" }}
 
-<header class="page-header">
+<header class="page-header photo-list-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1>
   {{- if .Description }}
@@ -11,13 +11,13 @@
 </header>
 
 {{- $pages := .RegularPages.ByDate.Reverse }}
-{{- $paginator := .Paginate $pages 6 }}
+{{- $paginator := .Paginate $pages 12 }}
 
 <div class="photo-gallery">
   {{- range $paginator.Pages }}
   <figure class="photo-item">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
-      <img src="{{ .Params.thumb | default .Params.image }}" alt="{{ .Title }}" loading="lazy">
+      <img src="{{ .Params.thumb | default .Params.image }}" alt="{{ .Title }}" loading="lazy" decoding="async">
     </a>
     {{- if .Title }}
     <figcaption>{{ .Title }}</figcaption>
