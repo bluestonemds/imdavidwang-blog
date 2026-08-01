@@ -1,0 +1,8 @@
+---
+title: "新城大街-2026-07-29"
+date: 2026-07-29
+image: "https://img.imdavidwang.com/photos/xincheng-avenue-2026-07-29.JPG"
+thumb: "https://img.imdavidwang.com/cdn-cgi/image/width=800,quality=80/photos/xincheng-avenue-2026-07-29.JPG"
+album: "第一组照片"
+tags: ["摄影", "景物"]
+---
