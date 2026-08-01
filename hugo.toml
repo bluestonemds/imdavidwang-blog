@@ -22,7 +22,7 @@ defaultContentLanguage = "zh"
 [menu]
   [[menu.main]]
     identifier = "notes"
-    name = "笔记"
+    name = "读书笔记"
     url = "/notes/"
     weight = 10
   [[menu.main]]
@@ -32,6 +32,6 @@ defaultContentLanguage = "zh"
     weight = 20
   [[menu.main]]
     identifier = "about"
-    name = "关于"
+    name = "关于我"
     url = "/about/"
     weight = 30
